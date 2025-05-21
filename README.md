@@ -17,30 +17,13 @@ wordlistcraft.py [-h] --data DATA [--special-chars SPECIAL_CHARS] [--all-special
 ## Features / Functionalities
 Here are the features of what the tool can do.
 
-### Leet Substitutions
-Automatically replace letters in your base words with common leetspeak characters. For example, 'a' becomes '@' or '4', and 'e' becomes '3'. This helps simulate realistic password mutations often used by users.
-
-### Audible Substitutions
-Replace letters with similar-sounding alternatives, like 'b' with 'v' or 'c' with 'k'. This increases the variety of wordlist entries by accounting for phonetic variations.
-
-### Toggle Case
-Generate all possible uppercase and lowercase variations of your base words. For example, 'admin' will produce 'admin', 'Admin', 'aDmin', 'ADMIN', etc.
-
-### Number Patterns
-Add numeric patterns to your base words using '@' as a wildcard to indicate variable digits. For example, the pattern '12@@' will expand to '1200' through '1299'.
-
-### Number Length
-Generate all numbers with a fixed digit length. For example, setting the length to 3 will produce numbers from '000' to '999', which can be appended or prepended to your base words.
-
-### Special Characters
-Add special characters before or after your base words or numbers. You can specify which characters to include or use a predefined set of common special characters.
-
-### Capitalization
-Capitalize the character at a specific position within your base words, allowing targeted mutations like capitalizing the second letter in "john" to get "jOhn".
-
-### Flexible Output
-Save the generated wordlist to a file of your choice by specifying the output filename. The default is wordlist.txt if no filename is provided.
-
-### File Size Estimation
-Before generating the wordlist file, get an estimated size of the output based on the current parameters. This helps you anticipate storage needs without creating the full file.
+- Leet Substitutions: Automatically replace letters in your base words with common leetspeak characters. For example, 'a' becomes '@' or '4', and 'e' becomes '3'. This helps simulate realistic password mutations often used by users.
+- Audible Substitutions: Replace letters with similar-sounding alternatives, like 'b' with 'v' or 'c' with 'k'. This increases the variety of wordlist entries by accounting for phonetic variations.
+- Toggle Case: Generate all possible uppercase and lowercase variations of your base words. For example, 'admin' will produce 'admin', 'Admin', 'aDmin', 'ADMIN', etc.
+- Number Patterns: Add numeric patterns to your base words using '@' as a wildcard to indicate variable digits. For example, the pattern '12@@' will expand to '1200' through '1299'.
+- Number Length: Generate all numbers with a fixed digit length. For example, setting the length to 3 will produce numbers from '000' to '999', which can be appended or prepended to your base words.
+- Special Characters: Add special characters before or after your base words or numbers. You can specify which characters to include or use a predefined set of common special characters.
+- Capitalization: Capitalize the character at a specific position within your base words, allowing targeted mutations like capitalizing the second letter in "john" to get "jOhn".
+- Flexible Output: Save the generated wordlist to a file of your choice by specifying the output filename. The default is wordlist.txt if no filename is provided.
+- File Size Estimation: Before generating the wordlist file, get an estimated size of the output based on the current parameters. This helps you anticipate storage needs without creating the full file.
 
