@@ -43,7 +43,7 @@ Examples:
   python3 wordlist_generator.py --data john,doe,juan --capitalize-index 2
 
   # Full example combining most options:
-  python3 wordlist_generator.py --data alice,bob --special-chars '!,$' --numbers 9@@ --capitalize-index 1 --output results.txt
+  python3 wordlistcraft.py --data fortinet --all-special-chars --numbers 20@@ --toggle-case --leet --audibles --output full_result.txt
   
 """
 
@@ -157,7 +157,7 @@ def main():
     parser.add_argument('--capitalize-index', type=int, help='Index of the word to which capitalization is to be applied')
     parser.add_argument('--output','-o', default='wordlist.txt', help='Output file (default name is wordlist.txt)')
     parser.add_argument('--leet', action='store_true', help='Generate leet speak variations of the base words')
-    parser.add_argument('--audibles', action='store_true', help='Generate audible variations')
+    parser.add_argument('--audibles', action='store_true', help='Generate audible variations of the base wordsclea')
     
     if len(sys.argv) == 1:
         parser.print_help()
