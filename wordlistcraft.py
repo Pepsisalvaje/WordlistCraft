@@ -279,53 +279,7 @@ def main():
                             if c not in combinaciones_vistas:
                                 f.write(c + '\n')
                                 combinaciones_vistas.add(c)
-
-
-#    combinaciones_finales = set()
-#
-    #if args.data and not (args.special_chars or args.all_special_chars or args.numbers or args.number_length or args.toggle_case or args.capitalize_index or args.leet or args.audibles):
-    #    combinaciones_finales = set()
-    #    for r in range(1, len(data_originales) + 1):
-    #        for combo in itertools.permutations(data_originales, r):
-    #            combinaciones_finales.add(''.join(combo))
-    #else:
-    #    for dato in data:
-    #        base = dato
-    #        combinaciones_finales.add(base)
-#
-    #        for num in numbers:
-    #            combinaciones_finales.add(f'{base}{num}')
-    #            combinaciones_finales.add(f'{num}{base}')
-#
-    #        for esp in special_chars:
-    #            combinaciones_finales.add(f'{base}{esp}')
-    #            combinaciones_finales.add(f'{esp}{base}')
-#
-    #        for num in numbers:
-    #            for esp in special_chars:
-    #                combinaciones_finales.add(f'{base}{num}{esp}')
-    #                combinaciones_finales.add(f'{base}{esp}{num}')
-    #                combinaciones_finales.add(f'{num}{base}{esp}')
-    #                combinaciones_finales.add(f'{esp}{base}{num}')
-
-
     print("Wordlist creada con éxito.")
-
-    #
-    #tamaño_estimado = sum(len((palabra + '\n').encode('utf-8')) for palabra in combinaciones_finales)
-#
-    #if tamaño_estimado >= 1_000_000_000:
-    #    print(f"Tamaño estimado del archivo {args.output}: {tamaño_estimado / 1_000_000_000:.2f} GB con {len(combinaciones_finales)} combinaciones.")
-    #else:
-    #    print(f"Tamaño estimado del archivo {args.output}: {tamaño_estimado / 1_000_000:.2f} MB con {len(combinaciones_finales)} combinaciones.")
-    #print("\n")
-#
-    #with open(output_path, 'w') as f:
-    #    for item in sorted(combinaciones_finales):
-    #        f.write(f'{item}\n')
-#
-    #
-    
 
 if __name__ == '__main__':
     main()

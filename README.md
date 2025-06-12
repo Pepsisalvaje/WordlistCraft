@@ -31,40 +31,40 @@ Here are the features of what the tool can do.
 Here are some examples of how can you use the tool:
 - Generate wordlist with base words "cat" and "dog"
 ```shell
-python3 wordlist_generator.py --data cat,dog
+python3 wordlistcraft.py --data cat,dog
 - Use special characters '%' and '&'
 ```shell
-python3 wordlist_generator.py --data cat,dog --special-chars '%,&'
+python3 wordlistcraft.py --data cat,dog --special-chars '%,&'
 ```
 - Generate numbers pattern with '@' as wildcard
 ```shell
-python3 wordlist_generator.py --data user --numbers 12@@
+python3 wordlistcraft.py --data user --numbers 12@@
 ```
 - Toggle case variations
 ```shell
-python3 wordlist_generator.py --data admin --toggle-case
+python3 wordlistcraft.py --data admin --toggle-case
 ```
 - Save output to custom file
 ```shell
-python3 wordlist_generator.py --data test -o custom_wordlist.txt
+python3 wordlistcraft.py --data test -o custom_wordlist.txt
 ```
 - Generate all numbers of fixed length 3 (000-999)
 ```shell
-python3 wordlist_generator.py --data number --number-length 3
+python3 wordlistcraft.py --data number --number-length 3
 ```
 - Capitalize the second word in the combination (index 2)
 ```shell
-python3 wordlist_generator.py --data john,doe,juan --capitalize-index 2
+python3 wordlistcraft.py --data john,doe,juan --capitalize-index 2
 ```
 - Enable leetspeak mutations
 ```shell
-python3 wordlist_generator.py --data hacker --leet
+python3 wordlistcraft.py --data hacker --leet
 ```
 - Enable phonetic (audible) variations
 ```shell
-python3 wordlist_generator.py --data jon --audibles
+python3 wordlistcraft.py --data jon --audibles
 ```
 - Full example combining most options:
 ```shell
-python3 wordlist_generator.py --data empresa --all-special-chars --numbers 20@@ --toggle-case --leet --audibles --output full_result.txt
+python3 wordlistcraft.py --data empresa --all-special-chars --numbers 20@@ --toggle-case --leet --audibles --output full_result.txt
 ```
