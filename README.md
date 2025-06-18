@@ -32,6 +32,7 @@ Here are some examples of how can you use the tool:
 - Generate wordlist with base words "cat" and "dog"
 ```shell
 python3 wordlistcraft.py --data cat,dog
+```
 - Use special characters '%' and '&'
 ```shell
 python3 wordlistcraft.py --data cat,dog --special-chars '%,&'
